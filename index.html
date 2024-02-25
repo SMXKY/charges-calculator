@@ -45,7 +45,7 @@
         <div class="app-body-grid-left">
           <div class="select-holder">
             <div class="select-operation-option mtn-border js-select-btn">
-              <p>Withdraw</p>
+              <p class="js-select-btn-text-display">Withdraw</p>
               <img
                 src="images-and-icons/icons/arrow-mtn.png"
                 alt="drop-down-icon"
@@ -55,11 +55,11 @@
 
             <div class="the-actual-options off-element js-the-actual-options">
               <span
-                class="selet-an-option mtn-background selet-an-option-1 js-drop-down"
+                class="selet-an-option mtn-background selet-an-option-1 js-drop-down js-option-btn-tranfer"
                 >Transfer</span
               >
               <span
-                class="selet-an-option mtn-background selet-an-option-2 js-drop-down"
+                class="selet-an-option mtn-background selet-an-option-2 js-drop-down js-option-btn-withdraw"
                 >Withdraw
               </span>
             </div>
@@ -71,10 +71,14 @@
               class="amount-input mtn-border js-amount-input"
               placeholder="Amount"
             />
-            <p class="off-element">Amount can only contain numbers</p>
+            <p class="off-element js-check-amount-text">
+              Amount can only contain numbers
+            </p>
           </div>
 
-          <button class="calculate-btn mtn-background js-call-action-btns">
+          <button
+            class="calculate-btn mtn-background js-call-action-btns js-claculate-charges"
+          >
             Calculate
           </button>
         </div>
@@ -82,20 +86,26 @@
         <div class="app-body-grid-right mtn-border js-right-grid">
           <div class="display-result">
             <p class="label-text">Amount:</p>
-            <p class="amount-text">0.00000 cfa</p>
+            <p class="amount-text js-amount-text js-og-amount">0.00000 cfa</p>
           </div>
 
           <div class="display-result">
             <p class="label-text">Charges:</p>
-            <p class="amount-text">0.00000 cfa</p>
+            <p class="amount-text js-amount-text js-charges-text">
+              0.00000 cfa
+            </p>
           </div>
 
           <div class="display-result">
             <p class="label-text">Total:</p>
-            <p class="amount-text">0.00000 cfa</p>
+            <p class="amount-text js-amount-text js-total-amount">
+              0.00000 cfa
+            </p>
           </div>
 
-          <button class="reset-btn mtn-background js-call-action-btns">
+          <button
+            class="reset-btn mtn-background js-call-action-btns js-reset-btn"
+          >
             Reset
           </button>
         </div>

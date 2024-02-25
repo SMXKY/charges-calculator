@@ -25,4 +25,26 @@ export function selectButton() {
       }
     });
   });
+
+  document
+    .querySelector(".js-option-btn-tranfer")
+    .addEventListener("click", () => {
+      document.querySelector(".js-select-btn-text-display").innerHTML =
+        "Transfer";
+
+      document
+        .querySelector(".js-the-actual-options")
+        .classList.add("off-element");
+    });
+
+  document
+    .querySelector(".js-option-btn-withdraw")
+    .addEventListener("click", () => {
+      document.querySelector(".js-select-btn-text-display").innerHTML =
+        "Withdraw";
+
+      document
+        .querySelector(".js-the-actual-options")
+        .classList.add("off-element");
+    });
 }
