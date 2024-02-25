@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charges Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/app.css" />
+  </head>
+  <body>
+    <div class="app-holder">
+      <div class="app-header">
+        <button
+          class="mtn-button on-mtn app-header-button app-header-button-solo js-mtn-btn js-mtn-switch"
+        >
+          <img src="images-and-icons/mtn-logo.webp" alt="mtn-logo" />
+          <p>Mobile Money</p>
+        </button>
+        <button
+          class="orange-button app-header-button app-header-button-solo js-orange-switch js-orange-btn"
+        >
+          <img src="images-and-icons/Orange_logo.svg.png" alt="orange-logo" />
+          <p>Orange Money</p>
+        </button>
+
+        <button
+          class="orange-button app-header-button verertile-button off-element on-mtn js-solo-btn"
+        >
+          <img
+            src="images-and-icons/mtn-logo.webp"
+            alt="mtn-logo"
+            class="js-solo-btn-img"
+          />
+          <p class="js-solo-btn-text">Mobile Money</p>
+        </button>
+      </div>
+
+      <div class="app-body-grid">
+        <div class="app-body-grid-left">
+          <div class="select-holder">
+            <div class="select-operation-option mtn-border js-select-btn">
+              <p>Withdraw</p>
+              <img
+                src="images-and-icons/icons/arrow-mtn.png"
+                alt="drop-down-icon"
+                class="drop-down-img js-drop-down-img"
+              />
+            </div>
+
+            <div class="the-actual-options off-element js-the-actual-options">
+              <span
+                class="selet-an-option mtn-background selet-an-option-1 js-drop-down"
+                >Transfer</span
+              >
+              <span
+                class="selet-an-option mtn-background selet-an-option-2 js-drop-down"
+                >Withdraw
+              </span>
+            </div>
+          </div>
+
+          <div class="input-div">
+            <input
+              type="text"
+              class="amount-input mtn-border js-amount-input"
+              placeholder="Amount"
+            />
+            <p class="off-element">Amount can only contain numbers</p>
+          </div>
+
+          <button class="calculate-btn mtn-background js-call-action-btns">
+            Calculate
+          </button>
+        </div>
+
+        <div class="app-body-grid-right mtn-border js-right-grid">
+          <div class="display-result">
+            <p class="label-text">Amount:</p>
+            <p class="amount-text">0.00000 cfa</p>
+          </div>
+
+          <div class="display-result">
+            <p class="label-text">Charges:</p>
+            <p class="amount-text">0.00000 cfa</p>
+          </div>
+
+          <div class="display-result">
+            <p class="label-text">Total:</p>
+            <p class="amount-text">0.00000 cfa</p>
+          </div>
+
+          <button class="reset-btn mtn-background js-call-action-btns">
+            Reset
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <button class="menu-btn js-menu-btn off-element">
+      <img src="images-and-icons/icons/menu.png" alt="" />
+    </button>
+
+    <div class="left-side-bar off-element hide-side-bar js-side-bar">
+      <button
+        class="mtn-button on-mtn app-header-button js-mtn-btn js-mtn-switch"
+      >
+        <img src="images-and-icons/mtn-logo.webp" alt="mtn-logo" />
+        <p>Mobile Money</p>
+      </button>
+      <button
+        class="orange-button app-header-button app-header-button-2-side-bar js-orange-switch js-orange-btn"
+      >
+        <img src="images-and-icons/Orange_logo.svg.png" alt="orange-logo" />
+        <p>Orange Money</p>
+      </button>
+
+      <button class="close-side-bar js-close-side-bar">
+        <img src="images-and-icons/icons/close.png" alt="" />
+      </button>
+    </div>
+    <script src="scripts/main.js" type="module"></script>
+  </body>
+</html>

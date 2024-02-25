@@ -1,0 +1,22 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  transition: 0.2s;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+:root {
+  --yellow: rgb(255, 205, 0);
+  --orange: rgb(255, 122, 0);
+  --division-line: rgb(240, 240, 240);
+  --yellow-shadow: rgb(255, 205, 0, 0.5);
+  --orange-shadow: rgb(255, 122, 0, 0.5);
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}

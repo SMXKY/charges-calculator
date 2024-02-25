@@ -1,0 +1,379 @@
+.app-holder {
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.app-header {
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: solid 1px var(--division-line);
+}
+
+.app-header-button {
+  display: flex;
+  align-items: center;
+  padding: 0rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  padding-right: 2.5rem;
+  border: none;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.app-header-button:hover {
+  opacity: 0.8;
+}
+
+.app-header-button img {
+  height: 3rem;
+  width: 3rem;
+  object-fit: cover;
+  margin-right: 2.5rem;
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+}
+
+.app-header-button p {
+  font-weight: 700;
+}
+
+.on-mtn {
+  border: solid 1px var(--yellow);
+  box-shadow: 0px 0px 12px var(--yellow-shadow);
+}
+
+.on-orange {
+  border: solid 1px var(--orange);
+  box-shadow: 0px 0px 12px var(--orange-shadow);
+}
+
+.app-body-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4rem;
+  padding: 2rem;
+}
+
+.select-operation-option {
+  position: relative;
+}
+
+.select-operation-option,
+.the-actual-options span,
+.amount-input,
+.calculate-btn {
+  width: 25vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.the-actual-options span {
+  border-radius: 0px;
+}
+
+.the-actual-options {
+  position: absolute;
+  top: 3.5rem;
+  left: 0rem;
+}
+
+.mtn-border {
+  border: solid 1px var(--yellow);
+}
+
+.orange-border {
+  border: solid 1px var(--orange);
+}
+
+.mtn-background {
+  background-color: var(--yellow);
+}
+
+.orange-background {
+  background-color: var(--orange);
+}
+
+.selet-an-option-1 {
+  border-bottom: solid 1px white;
+}
+
+.select-operation-option p {
+  font-weight: 500;
+}
+
+.select-operation-option img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.selet-an-option {
+  font-weight: 500;
+}
+
+.select-holder {
+  position: relative;
+}
+
+.select-operation-option:hover {
+  opacity: 0.7;
+}
+
+.selet-an-option:hover {
+  color: rgb(255, 255, 255);
+}
+
+.amount-input {
+  margin-top: 3rem;
+  font-size: 1.1rem;
+  padding: 0.95rem 1rem;
+  cursor: text;
+}
+
+.amount-input:focus {
+  outline: none;
+}
+
+.the-actual-options {
+  z-index: 100;
+}
+
+.input-div {
+  position: relative;
+}
+
+.input-div p {
+  color: red;
+  position: absolute;
+  bottom: -1.2rem;
+  font-size: 0.8rem;
+  left: 0.2rem;
+}
+
+.calculate-btn {
+  margin-top: 3rem;
+  border: none;
+  font-size: 1.1rem;
+  padding: 0.95rem 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  text-align: center;
+}
+
+.calculate-btn:hover,
+.reset-btn:hover {
+  opacity: 0.8;
+}
+
+.app-body-grid-right {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.display-result {
+  display: flex;
+  justify-content: space-between;
+}
+
+.display-result p {
+  cursor: default;
+}
+
+.label-text {
+  font-weight: 600;
+}
+
+.reset-btn {
+  padding: 0.8rem 0rem;
+  cursor: pointer;
+  border: none;
+  font-weight: 500;
+  border-radius: 0.4rem;
+  font-size: 1.05rem;
+}
+
+.menu-btn img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.menu-btn {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  border: none;
+  background: none;
+}
+
+.left-side-bar {
+  position: fixed;
+  top: 0rem;
+  bottom: 0rem;
+  left: 0rem;
+  padding: 3rem 1rem;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  z-index: 101;
+  background-color: white;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding-left: 0.3rem;
+}
+
+.app-header-button-2-side-bar {
+  margin-top: 1rem;
+}
+
+.close-side-bar {
+  position: absolute;
+  right: 0.7rem;
+  top: 0.7rem;
+  border: none;
+  background: none;
+}
+
+.close-side-bar img {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.off-element {
+  display: none;
+}
+
+.hide-side-bar {
+  left: -13rem;
+}
+
+@media (max-width: 1127px) {
+  .select-operation-option,
+  .the-actual-options span,
+  .amount-input,
+  .calculate-btn {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 963px) {
+  .select-operation-option,
+  .the-actual-options span,
+  .amount-input,
+  .calculate-btn {
+    width: 40vw;
+  }
+
+  .app-header {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 702px) {
+  .app-holder {
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0);
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .selet-an-option-2 {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  body {
+    align-items: start;
+    padding-top: 3rem;
+    justify-content: start;
+  }
+
+  .app-header-button-solo {
+    display: none;
+  }
+
+  .verertile-button {
+    display: flex;
+  }
+
+  .app-header,
+  .app-body-grid {
+    padding: 1rem 1rem;
+    width: 100%;
+  }
+
+  .app-holder {
+    width: 100vw;
+  }
+
+  .app-body-grid {
+    display: block;
+  }
+
+  .app-body-grid-right,
+  .amount-input,
+  .calculate-btn {
+    margin-top: 1rem;
+  }
+
+  .select-operation-option,
+  .the-actual-options span,
+  .amount-input,
+  .calculate-btn {
+    width: 100%;
+  }
+
+  .the-actual-options {
+    width: 100%;
+  }
+
+  .reset-btn {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 359px) {
+  .select-operation-option p,
+  .selet-an-option,
+  .amount-input,
+  .calculate-btn,
+  .label-text,
+  .amount-text,
+  .reset-btn,
+  .app-header-button p {
+    font-size: 0.8rem;
+  }
+
+  .the-actual-options {
+    top: 2.7rem;
+  }
+
+  .select-operation-option,
+  .the-actual-options span,
+  .amount-input,
+  .calculate-btn,
+  .reset-btn {
+    padding: 0.7rem;
+  }
+
+  .app-header-button {
+    padding-right: 1rem;
+  }
+
+  .app-header-button img {
+    height: 2.5rem;
+    width: 2.5rem;
+    object-fit: cover;
+    margin-right: 1rem;
+  }
+}
