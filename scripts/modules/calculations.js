@@ -59,7 +59,7 @@ export function calculateCharges() {
         document.querySelector(".js-total-amount").innerHTML =
           value + charges + " FCFA";
       } else {
-        if (value > 100) {
+        if (value >= 100) {
           if (value >= 100 && value <= 2499) {
             charges = 50;
           } else if (value >= 2500 && value <= 174999) {
